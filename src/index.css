@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .glass { @apply bg-white/5 backdrop-blur-lg border border-white/10; }
+  .gradient-text { @apply bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent; }
+}
