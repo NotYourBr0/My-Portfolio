@@ -45,7 +45,7 @@ const projects = [
     git:"https://github.com/NotYourBr0/Flappy-Bird"
   },
   {
-  title: "Gemini 2.0 AI Chat Application",
+  title: "AI Assistant-Modern AI chatbot",
   stack: "React • Tailwind • Gemini API • Framer Motion",
   description: "Modern AI chatbot with Google Gemini 2.0 integration, featuring real-time conversations, beautiful animations, and responsive design. Built with React and production-ready architecture.",
   features: [
