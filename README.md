@@ -1,12 +1,48 @@
-# React + Vite
+<!-- Profile Banner -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00c6ff,100:0072ff&height=200&section=header&text=My%20Portfolio%20🌐&fontSize=45&fontAlignY=35&animation=twinkling&fontColor=ffffff" />
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🚀 My Portfolio — Kartik Swami
 
-Currently, two official plugins are available:
+A sleek and modern **personal portfolio website** showcasing my **skills, projects, and experience**.  
+Built with ❤️ using **React, Vite, Tailwind CSS, and Framer Motion**.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 **Live Demo:** [my-portfolio-khaki-rho-93.vercel.app](https://my-portfolio-khaki-rho-93.vercel.app/)  
 
-## Expanding the ESLint configuration
+![Repo Stars](https://img.shields.io/github/stars/NotYourBr0/my-Portfolio?style=for-the-badge) 
+![Forks](https://img.shields.io/github/forks/NotYourBr0/my-Portfolio?style=for-the-badge) 
+![Issues](https://img.shields.io/github/issues/NotYourBr0/my-Portfolio?style=for-the-badge) 
+![License](https://img.shields.io/github/license/NotYourBr0/my-Portfolio?style=for-the-badge)  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features
+✅ Modern UI with **Tailwind CSS** + smooth **Framer Motion animations**  
+✅ Responsive design for **desktop, tablet, and mobile**  
+✅ Projects section with detailed showcase  
+✅ Resume integration  
+✅ Deployed on **Vercel** 🚀  
+
+---
+
+## 🛠️ Tech Stack
+- ⚛️ **React + Vite** — blazing fast frontend  
+- 🎨 **Tailwind CSS** — utility-first styling  
+- 🎞️ **Framer Motion** — animations  
+- ☁️ **Vercel** — deployment & hosting  
+
+---
+
+## 📌 Projects Highlighted
+- 📊 **Admin Panel & Dashboard CMS** — Secure CMS with JWT auth, MongoDB, Cloudinary  
+- 🌐 **Portfolio Website** — This site itself, showcasing animations + design skills  
+- 🎮 **Flappy Bird & Snake Games** — Fun browser-based games (vanilla JS)  
+- 🤖 **AI Chatbot** — Python + APIs for productivity automation  
+
+---
+
+## 📸 Preview
+<p align="center">
+  <img src="./assets/preview.png" alt="Portfolio Screenshot" width="800px"/>
+</p>
