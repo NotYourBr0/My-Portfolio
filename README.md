@@ -42,7 +42,4 @@ Built with ❤️ using **React, Vite, Tailwind CSS, and Framer Motion**.
 
 ---
 
-## 📸 Preview
-<p align="center">
-  <img src="./assets/preview.png" alt="Portfolio Screenshot" width="800px"/>
-</p>
+
