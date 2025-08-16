@@ -1,9 +1,25 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import ProjectCard from './ProjectCard'
-import { Code, Briefcase } from 'lucide-react'
+import React from 'react';
+import { motion } from 'framer-motion';
+import ProjectCard from './ProjectCard';
+import { Code, Briefcase } from 'lucide-react';
 
 const projects = [
+  {
+    title: "Myntra Clone – Responsive E-Commerce Web App",
+    stack: "React, Vite, Tailwind CSS, React Router, JSON, Framer Motion",
+    description:
+      "A production-grade, fully responsive clone of Myntra thoughtfully built with React, Vite, and Tailwind CSS. Mimics genuine e-commerce flows with dynamic category browsing, product details, sorting, and modern UI. All images and data are loaded from JSON files, and the design is mobile-friendly and job-ready.",
+    features: [
+      "Responsive multi-page architecture",
+      "Modern Navbar, Mega Menu, and Hero Banner",
+      "Dynamic product/category grid with sorting",
+      "Product details with similar product recommendations",
+      "Clean, animated UI via Tailwind and Framer Motion",
+      "Ready for integration with backend/cart/auth"
+    ],
+    Link: "https://myntra-clone-xi-seven.vercel.app/",         // <-- Update with your deployed demo link!
+    git: "https://github.com/NotYourBr0/Myntra-Clone"         // <-- Update with your GitHub repo!
+  },
   {
     title: "Admin Panel & Dashboard CMS (Full-Stack Web App)",
     stack: "React, Vite, Tailwind CSS, Node.js, Express.js, MongoDB Atlas, JWT, Cloudinary, Render, Netlify/Vercel",
@@ -16,20 +32,8 @@ const projects = [
       "Cloudinary image uploads",
       "Clean, responsive UI using Tailwind CSS"
     ],
-    Link:"https://my-dashboard-jade-nu.vercel.app/",
-    git:"https://github.com/NotYourBr0/my-dashboard"
-  },
-  {
-    title: "My First Hosted Portfolio Website",
-    stack: "HTML, CSS, GitHub Pages, JS",
-    description: "Developed and hosted my first ever personal portfolio website on GitHub using HTML, CSS etc.",
-    features: [
-      "Showcases skills and projects",
-      "Hosted on GitHub Pages",
-      "Utilizes AI tools for efficiency"
-    ],
-    Link:"https://notyourbr0.github.io/portfolio/",
-    git:"https://github.com/NotYourBr0/portfolio"
+    Link: "https://my-dashboard-jade-nu.vercel.app/",
+    git: "https://github.com/NotYourBr0/my-dashboard"
   },
   {
     title: "Flappy Bird Game",
@@ -41,26 +45,25 @@ const projects = [
       "Responsive",
       "Interactive user experience"
     ],
-    Link:"https://flappy-bird-rust-xi.vercel.app/",
-    git:"https://github.com/NotYourBr0/Flappy-Bird"
+    Link: "https://flappy-bird-rust-xi.vercel.app/",
+    git: "https://github.com/NotYourBr0/Flappy-Bird"
   },
   {
-  title: "AI Assistant-Modern AI chatbot",
-  stack: "React • Tailwind • Gemini API • Framer Motion",
-  description: "Modern AI chatbot with Google Gemini 2.0 integration, featuring real-time conversations, beautiful animations, and responsive design. Built with React and production-ready architecture.",
-  features: [
-    "Google Gemini 2.0 Flash integration",
-    "Real-time chat with typing indicators",
-    "Smooth animations and transitions",
-    "Multi-model support and conversation export",
-    "Responsive mobile-first design",
-    "Professional error handling and UX"
-  ],
-  Link:"https://ai-chatbot-omega-sage.vercel.app/",
-  git:"https://github.com/NotYourBr0/AI-Chatbot"
-}
-
-]
+    title: "AI Assistant-Modern AI chatbot",
+    stack: "React • Tailwind • Gemini API • Framer Motion",
+    description: "Modern AI chatbot with Google Gemini 2.0 integration, featuring real-time conversations, beautiful animations, and responsive design. Built with React and production-ready architecture.",
+    features: [
+      "Google Gemini 2.0 Flash integration",
+      "Real-time chat with typing indicators",
+      "Smooth animations and transitions",
+      "Multi-model support and conversation export",
+      "Responsive mobile-first design",
+      "Professional error handling and UX"
+    ],
+    Link: "https://ai-chatbot-omega-sage.vercel.app/",
+    git: "https://github.com/NotYourBr0/AI-Chatbot"
+  }
+];
 
 const Projects = () => {
   return (
@@ -78,7 +81,6 @@ const Projects = () => {
             <Briefcase className="w-8 h-8 text-blue-400" />
             <h2 className="text-4xl font-bold gradient-text">Projects</h2>
           </motion.div>
-
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -90,18 +92,16 @@ const Projects = () => {
             Each project reflects my journey in mastering different technologies and solving real-world problems.
           </motion.p>
         </div>
-
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <ProjectCard 
-              key={project.title} 
-              project={project} 
-              index={index} 
+            <ProjectCard
+              key={project.title}
+              project={project}
+              index={index}
             />
           ))}
         </div>
-
         {/* Call to Action */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -131,7 +131,7 @@ const Projects = () => {
         </motion.div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;
