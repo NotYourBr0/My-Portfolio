@@ -790,23 +790,38 @@ function handleContactForm(e) {
     const originalText = submitBtn.textContent;
     submitBtn.textContent = 'Sending...';
     submitBtn.disabled = true;
-    
-    // Simulate form submission
-    setTimeout(() => {
-        // Reset form
-        form.reset();
-        
-        // Show success message
-        submitBtn.textContent = 'Message Sent!';
-        submitBtn.style.backgroundColor = '#10b981';
-        
+
+    // Actually submit the form
+    fetch(portfolioData.contact.form_endpoint, {
+        method: 'POST',
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    .then(response => {
+        if (response.ok) {
+            // Success
+            form.reset();
+            submitBtn.textContent = 'Message Sent!';
+            submitBtn.style.backgroundColor = '#10b981';
+        } else {
+            throw new Error('Form submission failed');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        submitBtn.textContent = 'Failed to Send';
+        submitBtn.style.backgroundColor = '#ef4444';
+    })
+    .finally(() => {
         // Reset button after delay
         setTimeout(() => {
             submitBtn.textContent = originalText;
             submitBtn.disabled = false;
             submitBtn.style.backgroundColor = '';
         }, 3000);
-    }, 2000);
+    });
 }
 
 // Add CSS for animations
