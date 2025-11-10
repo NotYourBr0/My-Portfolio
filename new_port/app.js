@@ -117,15 +117,16 @@ const portfolioData = {
     },
   ],
   projects: [
-    {
-      title: "Admin Panel CMS",
-      description:
-        "Secure content management system with user authentication, role-based access control, and real-time data synchronization.",
-      technologies: ["React", "Node.js", "MongoDB", "JWT"],
-      github_url: "https://github.com/NotYourBr0/my-dashboard",
-      live_url: "https://my-dashboard-jade-nu.vercel.app/",
-      featured: true,
-    },
+   {
+  title: "Admin Panel CMS",
+  description:
+    "Secure and scalable content management system featuring user authentication, role-based access, and real-time content updates with cloud integration.",
+  technologies: ["MERN Stack", "TailwindCSS", "Cloudinary", "JWT", "CRUD APIs"],
+  github_url: "https://github.com/NotYourBr0/my-dashboard",
+  live_url: "https://my-dashboard-jade-nu.vercel.app/",
+  featured: true,
+},
+
     {
       title: "Image to PDF Webapp",
       description:
